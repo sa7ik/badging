@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Data</title>
+</head>
+<body>
+    <script>
+        const fakeData = "https://jsonplaceholder.typicode.com/posts"
+
+        const getData = async () => {
+            const res = await fetch(fakeData)
+            const data = await res.json()
+            console.log(data);
+        }
+
+        getData();
+    </script>
+</body>
+</html>

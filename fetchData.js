@@ -2,11 +2,10 @@ const http=require("http")
 const port=3000
 
 const server=http.createServer(function(req,res){
-res.write("hello Node")
+res.write("Hello Node")
 res.end()
 })
 const fakeData = "https://jsonplaceholder.typicode.com/posts"
-
 
 const getData=async () => {
     const res = await fetch (fakeData)
